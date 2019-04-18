@@ -1,18 +1,21 @@
-package Modelo;
+package model;
 
-import Util.Conector_DB;
+import Util.dataBaseConection;
 import java.sql.SQLException;
 
-public class ModeloSigIN {
+public class registerModel {
 
+    //Global attritubes.
     private String Usuario;
     private String Email;
     private String Contraseña;
-    Conector_DB conector;
+    dataBaseConection conector;
 
-    public ModeloSigIN() {
+    //Constructors
+    public registerModel() {
     }
 
+    //Setters and Getters methods.
     public String getUsuario() {
         return Usuario;
     }
@@ -37,10 +40,14 @@ public class ModeloSigIN {
         this.Contraseña = Contraseña;
     }
 
-    //Método Insert
+    /**
+     * This method sends the statement with username, password and email information to the dataBaseConection class;
+     *
+     * @throws SQLException
+     */
     public void Insert() throws SQLException {
 
-        conector = new Conector_DB();
+        conector = new dataBaseConection();
 
         conector.Insert("INSERT INTO `cajero`.`usuario` (`Usuario`,`Email`, `Contraseña`) VALUES ('" + this.Usuario + "','" + this.Email + "', '" + this.Contraseña + "');");
 

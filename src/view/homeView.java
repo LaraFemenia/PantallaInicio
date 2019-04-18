@@ -1,22 +1,22 @@
-package Vista;
+package view;
 
 import javax.swing.JOptionPane;
-import Controlador.ControladorSigIN;
+import controller.registerController;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import AppPackage.AnimationClass;
 
-public class login extends javax.swing.JFrame {
+public class homeView extends javax.swing.JFrame {
 
+    //Global attributes
     AnimationClass Animacion;
-    ControladorSigIN ControladorVista;
+    registerController ControladorVista;
 
-    public login() {
+    //Constructors
+    public homeView() {
         initComponents();
-
         this.setLocationRelativeTo(null);
-
     }
 
     /**
@@ -184,10 +184,13 @@ public class login extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * This method displays an animation menu.
+     *
+     * @param evt
+     */
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
-
         Animacion = new AnimationClass();
-
         Animacion.jLabelXRight(-40, 10, 10, 5, jlbInternet);
         Animacion.jLabelXLeft(10, -40, 10, 5, jlbInternet);
         Animacion.jLabelXRight(-40, 10, 10, 5, jlbCalculadora);
@@ -211,13 +214,18 @@ public class login extends javax.swing.JFrame {
 
     private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
 
-        this.setState(login.ICONIFIED);
+        this.setState(homeView.ICONIFIED);
     }//GEN-LAST:event_jLabel6MouseClicked
 
     private void jLabel7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseEntered
 
     }//GEN-LAST:event_jLabel7MouseEntered
 
+    /**
+     * This method closes the application.
+     *
+     * @param evt
+     */
     private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
         int dialog = JOptionPane.YES_NO_OPTION;
         int result = JOptionPane.showConfirmDialog(null, "¿Desea cerrar esta aplicación?", "Exit", dialog);
@@ -226,20 +234,20 @@ public class login extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jLabel7MouseClicked
 
+    /**
+     * This method sends the Username, Uassword and Email information to the "registerController" class.
+     *
+     * @param evt
+     */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String Usuario = txtUsuario.getText();
         String Contraseña = txtContraseña.getText();
         String Email = txtEmail.getText();
-
-        ControladorVista = new ControladorSigIN();
-
+        ControladorVista = new registerController();
         try {
-
             ControladorVista.Insertar(Usuario, Email, Contraseña);
-
         } catch (SQLException ex) {
-
-            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(homeView.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -260,21 +268,23 @@ public class login extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(homeView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(homeView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(homeView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(homeView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new login().setVisible(true);
+                new homeView().setVisible(true);
             }
         });
     }

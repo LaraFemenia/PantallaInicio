@@ -71,7 +71,7 @@ public class homeView extends javax.swing.JFrame {
         jLabel4.setText("Username");
         jpIngreso.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 200, 90, 30));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/icons8_User_96px_2.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/icons8_User_96px_2.png"))); // NOI18N
         jpIngreso.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 90, 100, 100));
 
         txtUsuario.setBackground(new java.awt.Color(255, 255, 255));
@@ -95,7 +95,7 @@ public class homeView extends javax.swing.JFrame {
         jLabel5.setText("Email");
         jpIngreso.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 340, 50, 30));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/icons8_Menu_32px.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/icons8_Menu_32px.png"))); // NOI18N
         jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -104,14 +104,14 @@ public class homeView extends javax.swing.JFrame {
         });
         jpIngreso.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 40, 20));
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Enter_OFF.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/Enter_OFF.png"))); // NOI18N
         jButton1.setBorder(null);
         jButton1.setBorderPainted(false);
         jButton1.setContentAreaFilled(false);
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Enter_ON.png"))); // NOI18N
-        jButton1.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Enter_ON.png"))); // NOI18N
-        jButton1.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Enter_ON.png"))); // NOI18N
+        jButton1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/Enter_ON.png"))); // NOI18N
+        jButton1.setRolloverSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/Enter_ON.png"))); // NOI18N
+        jButton1.setSelectedIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/Enter_ON.png"))); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -119,7 +119,7 @@ public class homeView extends javax.swing.JFrame {
         });
         jpIngreso.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 440, -1, -1));
 
-        jlbMusica.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/icons8_Musical_Notes_32px.png"))); // NOI18N
+        jlbMusica.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/icons8_Musical_Notes_32px.png"))); // NOI18N
         jlbMusica.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlbMusica.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -128,7 +128,7 @@ public class homeView extends javax.swing.JFrame {
         });
         jpIngreso.add(jlbMusica, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, 140, 30, 30));
 
-        jlbInternet.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/icons8_Globe_32px.png"))); // NOI18N
+        jlbInternet.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/icons8_Globe_32px.png"))); // NOI18N
         jlbInternet.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlbInternet.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -137,7 +137,7 @@ public class homeView extends javax.swing.JFrame {
         });
         jpIngreso.add(jlbInternet, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, 60, 30, 30));
 
-        jlbCalculadora.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/icons8_Calculator_32px.png"))); // NOI18N
+        jlbCalculadora.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/icons8_Calculator_32px.png"))); // NOI18N
         jlbCalculadora.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jlbCalculadora.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -157,7 +157,7 @@ public class homeView extends javax.swing.JFrame {
         jPanel2.setForeground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/icons8_Expand_Arrow_32px.png"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/icons8_Expand_Arrow_32px.png"))); // NOI18N
         jLabel6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -166,7 +166,7 @@ public class homeView extends javax.swing.JFrame {
         });
         jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 10, -1, -1));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/icons8_Multiply_32px.png"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/resources/icons8_Multiply_32px.png"))); // NOI18N
         jLabel7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
